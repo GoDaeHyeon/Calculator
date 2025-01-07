@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class CalculatorLv1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);    // sc라는 이름의 Scanner객체를 생성합니다. System.in 은 사용자로부터 입력을 받는 장치입니다.
         String exitKeyword = "exit";    // 종료를 위한 키워드 설정
-        String userInput;
+        String userInput;   // 사용자가 입력한 값을 저장할 변수 UserInput을 선언합니다.
 
         System.out.println("계산기를 시작합니다. 종료하려면 'exit'를 입력하세요.");
 
         while (true) {
             // 첫 번째 숫자 입력 받기
             System.out.print("첫 번째 숫자를 입력하세요.: ");
-            userInput = sc.next();
+            userInput = sc.next();  // 사용자 입력받기
             if (userInput.equals(exitKeyword)) {
                 System.out.print("계산기를 종료합니다.");
                 break;
             }
-            double num1 = Double.parseDouble(userInput);
+            double num1 = Double.parseDouble(userInput);    // 사용자가 입력한 문자열을 실수형 숫자(double)로 변환하고 num1 변수에 저장합니다.
 
             // 두 번째 숫자 입력 받기
             System.out.print("두 번째 숫자를 입력하세요.: ");
@@ -27,7 +27,7 @@ public class CalculatorLv1 {
                 System.out.print("계산기를 종료합니다.");
                 break;
             }
-            double num2 = Double.parseDouble(userInput);
+            double num2 = Double.parseDouble(userInput);    // 사용자가 입력한 문자열을
 
             // 연산자 입력받기
             System.out.print("연산자를 입력햐세요 (+, -, *, /): ");
